@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fb8c00"
+    tools:context=".pantallasecundarias.ContactanosActivity">
+
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo"
+        android:layout_above="@+id/content1"/>
+
+    <LinearLayout
+        android:id="@+id/content1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edCedula1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="Ingrese su Cedula"
+            android:background="@drawable/round_back_while10_5"
+            android:textColorHint="#CCFFFFFF"
+
+
+            />
+        <EditText
+            android:id="@+id/edNombre1"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="Ingrese su Nombre"
+            android:background="@drawable/round_back_while10_5"
+            android:textColorHint="#CCFFFFFF"
+
+
+            />
+        <EditText
+            android:id="@+id/edApellido1"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="Ingrese su Apellido"
+            android:background="@drawable/round_back_while10_5"
+            android:textColorHint="#CCFFFFFF"
+
+
+            />
+
+
+
+        <EditText
+            android:id="@+id/edCorreo1"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:hint="Ingrese su Correo"
+            android:background="@drawable/round_back_while10_5"
+            android:textColorHint="#CCFFFFFF"
+
+
+            />
+        <EditText
+            android:id="@+id/edDescripcion1"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:hint="Asunto"
+            android:background="@drawable/round_back_while10_5"
+            android:textColorHint="#CCFFFFFF"
+
+
+            />
+
+        <Button
+            android:id="@+id/enviarSoliBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Enviar Solicitud"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/notifications"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp">
+
+            <View
+                android:layout_marginEnd="10dp"
+                android:background="#4DFFFFFF"
+                android:layout_centerInParent="true"
+                android:layout_toStartOf="@id/ortxt"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                />
+            <TextView
+                android:textColor="#99FFFFFF"
+                android:layout_centerInParent="true"
+                android:id="@+id/ortxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"/>
+
+            <View
+                android:layout_marginStart="10dp"
+                android:background="#4DFFFFFF"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@id/ortxt"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logoista"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Escribenos para mas informacion"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

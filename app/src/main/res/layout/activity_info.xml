@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity"
+    android:background="#fb8c00">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back_btn"
+            android:padding="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ajustes"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/vuela_v1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Bienvenido"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:paddingStart="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_back_secondary_100"
+                android:text="Cuenta Pasajero"
+                android:paddingEnd="30dp"
+                android:textAllCaps="false"
+                android:textColor="@color/primary"
+                />
+
+            <LinearLayout
+            android:background="@drawable/round_back_whiite10_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <!--centro de informacion Security-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:id="@+id/securitiIcon"
+                    android:layout_height="40dp"
+                    android:src="@drawable/security_icon"
+                    android:background="@drawable/round_back_security"
+
+                    android:padding="12dp"/>
+
+                <TextView
+
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Seguridad &amp; Viaje"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@+id/securitiIcon"/>
+
+                <ImageView
+                    android:id="@+id/seguridadViaje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/right_arrow_icon" />
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <!--Codigo QR-->
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:id="@+id/qrIcon"
+                    android:layout_height="40dp"
+                    android:src="@drawable/qr_icon"
+                    android:background="@drawable/round_back_night_mode"
+
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Escanear Codigo QR"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@+id/qrIcon"/>
+
+                <ImageView
+                    android:id="@+id/codigoQr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow_icon"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    />
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <!--Informacion Aerolinea-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:id="@+id/informacionAerolineaIcon"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_baseline_info_24"
+                    android:background="@drawable/round_back_notifications"
+
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Informacion Aerolinea"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@+id/informacionAerolineaIcon"/>
+
+                <ImageView
+                    android:id="@+id/informacionAerolinea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow_icon"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    />
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <!--Solicitud POST / Contactanos-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:id="@+id/solicitudIcon"
+                    android:layout_height="40dp"
+                    android:src="@drawable/form_icon"
+                    android:background="@drawable/round_back_private_account"
+
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Contactanos"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@+id/solicitudIcon"/>
+
+                <ImageView
+                    android:id="@+id/contactanos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow_icon"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    />
+
+
+
+
+
+
+            </RelativeLayout>
+            <!--Cerrar Sesion-->
+
+            <RelativeLayout
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:id="@+id/logoutIcon"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logout_icon"
+                    android:background="@drawable/round_back_security"
+
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:id="@+id/cerrarSesion"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Cerrar Sesion"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@+id/logoutIcon"/>
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/menuColor"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation" />
+
+</RelativeLayout>

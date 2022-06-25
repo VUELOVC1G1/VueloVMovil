@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VueloVMovil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc">Conoce acerca de Airline VUELA V-Proyecto Academico</string>
+    <string-array name="pagos">
+        <item>MasterCard</item>
+        <item>Banco Pichincha</item>
+    </string-array>
+</resources>
